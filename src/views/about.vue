@@ -252,18 +252,23 @@ export default {
     align-items: center;
     gap: 40px;
     text-align: center;
+    z-index: 11111;
  
     .text{
       display: flex;
       align-items: center;
       flex-direction: column;
       gap: 20px;
+      z-index: 1111;
       p{
         width: 70%;
+        z-index: 1111;
       }
       h3{
+        z-index: 11111;
         font-size: 30px;
         span{
+          z-index: 1111;
           color: var(--mainColor);
         }
       }
@@ -280,6 +285,7 @@ export default {
     gap: 30px;
     justify-content: center;
     height: 100%;
+    z-index: 1111;
     .form1{
       width: 50%;
       display: flex;
@@ -288,6 +294,7 @@ export default {
       // gap: 30px;
       height: 100%;
       justify-content: space-around;
+      z-index: 1111;
       .text{
         width: 100%;
         display: flex;
@@ -318,6 +325,7 @@ export default {
           cursor: pointer;
           border-radius: 20px;
           transition: 0.5s;
+          z-index: 1111;
           &:hover{
             transform: translateY(-10px);
           }
@@ -329,6 +337,7 @@ export default {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      z-index: 1111;
       .skill{
         padding: 20px;
         display: flex;
@@ -374,6 +383,7 @@ export default {
 
 
 .block{
+  z-index: 11111;
   width: 100%;
   display: flex;
   align-items: center;
@@ -391,6 +401,7 @@ export default {
     gap: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.467);
     background-color: #fff;
+    z-index: 11111;
     
      position: relative;
 //      &::before{
@@ -434,7 +445,7 @@ margin: 10px 0px;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  left: -4.5%;
+  left: -4.7%;
 }
   
       span{
@@ -451,101 +462,7 @@ margin: 10px 0px;
 }
 
 
-// @media (max-width: 920px){
-//   .block{
-//     .box{
-//       .thebox{
-//         .text{
-//           .icon{
 
-//             &::before{
-//   content: '';
-//   background-color: var(--mainColor);
-//   position: absolute;
-//   height: 15px;
-//   width: 15px;
-//   border-radius: 50%;
-//   left: -7%;
-// }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 810px){
-//   .block{
-//     flex-direction: column;
-//     gap: 50px;
-//     .box{
-//       padding: 40px;
-//       width: 80%;
-//       &::before{
-//   content: '';
-//   background-color: var(--mainColor);
-//   position: absolute;
-//   height: 80%;
-//   width: 3px;
-//   left: 4%;
-//   top: 13%;
-// }
-//       .thebox{
-//         .text{
-//           .icon{
-               
-//             &::before{
-//   content: '';
-//   background-color: var(--mainColor);
-//   position: absolute;
-//   height: 15px;
-//   width: 15px;
-//   border-radius: 50%;
-//   left: -7%;
-// }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-// @media (max-width:620px){
-//   .block{
-//     flex-direction: column;
-//     gap: 50px;
-//     .box{
-//       padding: 40px;
-//       width: 80%;
-//       &::before{
-//   content: '';
-//   background-color: var(--mainColor);
-//   position: absolute;
-//   height: 80%;
-//   width: 3px;
-//   left: 4%;
-//   top: 13%;
-// }
-//       .thebox{
-//         .text{
-//           .icon{
-               
-//             &::before{
-//   content: '';
-//   background-color: var(--mainColor);
-//   position: absolute;
-//   height: 15px;
-//   width: 15px;
-//   border-radius: 50%;
-//   left: -9%;
-// }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 
 
@@ -568,9 +485,28 @@ margin: 10px 0px;
   .block{
     flex-direction: column;
     gap: 50px;
-   .box{
-    width: 100%;
-   }
+    .box{
+      width: 100%;
+     .thebox{
+      &::before{
+  content: '';
+  background-color: var(--mainColor);
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: -2%;
+}
+.text{
+  .icon{
+    &::before{
+  
+  left: -2.8%;
+}
+  }
+}
+     }
+
+    }
   }
 
 }
@@ -584,22 +520,14 @@ margin: 10px 0px;
      .thebox{
       &::before{
   content: '';
-  background-color: var(--mainColor);
-  position: absolute;
-  height: 100%;
-  width: 3px;
-  left: -6%;
+
+  left: -5.5%;
 }
 .text{
   .icon{
     &::before{
-  content: '';
-  background-color: var(--mainColor);
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  left: -8.5%;
+
+  left: -7.7%;
 }
   }
 }

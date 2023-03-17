@@ -87,6 +87,7 @@
     padding: 20px;
     justify-content: space-between;
      position: relative;
+     z-index: 1111;
 
 
      a {
@@ -165,6 +166,7 @@
 
 @media(max-width:760px){
     .navbar{
+        z-index: 111111111;
         .bar{
             display: block;
         }

@@ -70,6 +70,7 @@ export default {
         margin-top: 30px;
         margin-bottom: 50px;
       font-size: 35px;
+      z-index: 1111;
       position: relative;
       &::before{
         content: '';
@@ -78,6 +79,7 @@ export default {
         background-color: var(--mainColor);
         position: absolute;
         top: 100%;
+        z-index: 111;
       }
       &::after{
         content: '';
@@ -87,6 +89,7 @@ export default {
         background-color: var(--mainColor);
         position: absolute;
         top: 130%;
+        z-index: 111;
       }
     }
 
@@ -96,8 +99,10 @@ export default {
         align-items:center;
         font-size: 25px;
         gap:30px;
+        z-index: 111;
         h3{
             color: var(--mainColor);
+            z-index: 111;
         }
     }
 
@@ -107,6 +112,7 @@ export default {
         gap: 20px;
         margin-top: 50px;
         width: 100%;
+        z-index: 111111;
         .box{
             display: flex;
             flex-direction: column;
@@ -138,14 +144,18 @@ export default {
         width: 100%;
         gap: 30px;
         padding: 30px;
+        z-index: 11111;
         h2{
         font-size: 27px;
         color: var(--mainColor);
+        z-index: 1111;
         }
         p{
             color: gray;
+            z-index: 1111;
         }
         form{
+            z-index: 1111111;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -177,6 +187,7 @@ export default {
                 &:hover{
                     transform: scale(1.1);
                 }
+                z-index: 11111;
             }
         }
     }

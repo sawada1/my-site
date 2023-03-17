@@ -65,12 +65,14 @@ export default {
 <style lang="scss">
   @import'../sass/main.scss';
 
+  
 
   .services{
     margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 1111;
     h1{
       font-size: 35px;
       position: relative;
@@ -81,6 +83,7 @@ export default {
         background-color: var(--mainColor);
         position: absolute;
         top: 100%;
+        z-index: 111;
       }
       &::after{
         content: '';
@@ -99,6 +102,7 @@ export default {
         grid-template-columns: repeat(3 , 1fr);
         gap: 30px;
         width: 80%;
+        z-index: 11111;
         .box{
             margin: 20px 0px;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.462);

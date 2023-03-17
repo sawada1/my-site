@@ -16,49 +16,7 @@
       </div>
   </div>
 
-  <div class="animate">
-     <div class="bubbles">
-      <span style="--i:11;"></span>
-      <span style="--i:12;"></span>
-      <span style="--i:24;"></span>
-      <span style="--i:14;"></span>
-      <span style="--i:23;"></span>
-      <span style="--i:18;"></span>
-      <span style="--i:16;"></span>
-      <span style="--i:19;"></span>
-      <span style="--i:20;"></span>
-      <span style="--i:22;"></span>
-      <span style="--i:25;"></span>
-      <span style="--i:18;"></span>
-      <span style="--i:21;"></span>
-      <span style="--i:15;"></span>
-      <span style="--i:13;"></span>
-      <span style="--i:26;"></span>
-      <span style="--i:17;"></span>
-      <span style="--i:13;"></span>
-      <span style="--i:28;"></span>
-      <span style="--i:11;"></span>
-      <span style="--i:12;"></span>
-      <span style="--i:24;"></span>
-      <span style="--i:14;"></span>
-      <span style="--i:23;"></span>
-      <span style="--i:18;"></span>
-      <span style="--i:16;"></span>
-      <span style="--i:19;"></span>
-      <span style="--i:20;"></span>
-      <span style="--i:22;"></span>
-      <span style="--i:25;"></span>
-      <span style="--i:18;"></span>
-      <span style="--i:21;"></span>
-      <span style="--i:15;"></span>
-      <span style="--i:13;"></span>
-      <span style="--i:26;"></span>
-      <span style="--i:17;"></span>
-      <span style="--i:13;"></span>
-      <span style="--i:28;"></span>
-  
-     </div>
-  </div>
+
     <footter/>
   </div>
  
@@ -113,51 +71,9 @@ return{theword}
   position: relative;
   width: 100%;
   height: 100vh;
+  z-index: 11111;
 }
-  .animate{
-    position: absolute;
-    width: 95%;
-    height: 100%;
-    top: 50%;
-    // z-index: -111;
-    // z-index: 1111;
-    // overflow: hidden;
-    .bubbles{
-      position: absolute;
-      display: flex;
-      // z-index: -111;
-      span{
-        position: relative;
-        width: 30px;
-        height: 30px;
-        // z-index: -111;
-        // background-color: #4fc3dc;
-        background-color: var(--mainColor);
-        margin: 0 5px;
-        border-radius: 50%;
-        box-shadow: 0 0 0 10px #4fc3dc44,
-        0 0 50px var(--mainColor),
-        0 0 100px var(--mainColor);
-        animation: anim 20s linear infinite;
-        animation-duration: calc(180s / var(--i));
-        &:nth-child(even){
-          background-color: #ff2d75;
-          box-shadow: 0 0 0 10px #ff2d7544,
-        0 0 50px #ff2d75,
-        0 0 100px #ff2d75;
-        } 
-      }
-    }
-  }
 
-  @keyframes anim {
-    0%{
-      transform: translateY(100vh) scale(0);
-    }
-    100%{
-      transform: translateY(-100vh) scale(1);
-    }
-  }
 
   .landing{
     margin-top: 50px;

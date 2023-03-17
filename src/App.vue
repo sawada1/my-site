@@ -1,6 +1,7 @@
 <template>
     <div id="app"   :class="{'dark': thecheck}" :style="{'--mainColor':color}">
 
+
 <navbar :color="color" :change="change" :toggle="toggle"/>
 
   <router-view v-slot="{Component}">
@@ -8,6 +9,50 @@
        <component :is="Component"></component>
   </transition>
   </router-view>
+  
+  <div class="animate" :class="{'active': bubbles}">
+       <div class="bubbles">
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:28;"></span>
+  
+     </div>
+  </div>
 
   <div class="theme" :class="{'active':check}">
     <div v class="color">
@@ -23,12 +68,13 @@
          </div>
 
          <i @click="toggle" class="fa-solid  " :class="{'fa-sun': icon, 'fa-moon':!icon}"></i>
+         <i @click="togglebuubles" class="fa-solid" :class="{'fa-droplet-slash': icon2 , 'fa-droplet': !icon2}"></i>
     
   </div>
 
 
- 
 </div>
+
 
 </template>
 
@@ -37,12 +83,6 @@
 
 <script>
 
-window.onscroll = ()=>{
-  if(window.scrollY >= 1){
-    console.log("ssfsf");
-  }
-
-}
 
 
 import navbar from './components/navbar.vue'
@@ -60,6 +100,7 @@ const change = (event) => {
 }
 
 let icon = ref( JSON.parse(localStorage.getItem("iconn")));
+let icon2 = ref( JSON.parse(localStorage.getItem("iconn2")));
 
 let check = ref(false);
 
@@ -71,8 +112,16 @@ let toggle = ()=>{
         localStorage.setItem("iconn",icon.value);
       }
 
+let bubbles = ref(false);
 
-return{color , change , thecheck , toggle , check , icon}
+let togglebuubles = ()=>{
+  bubbles.value =  !bubbles.value;
+  icon2.value =  !icon2.value
+  localStorage.setItem("iconn2",icon.value);
+}
+
+
+return{color , change , thecheck , toggle , check , icon , bubbles , togglebuubles , icon2}
  }
 
 }
@@ -89,6 +138,7 @@ return{color , change , thecheck , toggle , check , icon}
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   color: #2c3e50;
+  z-index: 11111;
 }
 
 
@@ -101,6 +151,7 @@ return{color , change , thecheck , toggle , check , icon}
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 11111;
   // background-color: red;
   width: 200px;
   padding: 10px;
@@ -190,6 +241,7 @@ padding: 5px;
   width: 100%;
   gap: 30px;
   margin-top: 20px;
+  z-index: 11111;
   .theicon{
     display: flex;
     align-items: center;
@@ -221,6 +273,59 @@ padding: 5px;
     }
   }
 }
+
+
+
+
+.animate{
+    position: fixed;
+    width: 95%;
+    height: 100%;
+    display: none;
+
+    top: 0%;
+   
+    &.active{
+    display: block;
+    }
+    .bubbles{
+      position: absolute;
+      display: flex;
+      // z-index: -111;
+      width: 100%;
+      height: 100%;
+      span{
+        position: relative;
+        width: 50px;
+        height: 20px;
+        // z-index: -111;
+        // background-color: #4fc3dc;
+        background-color: var(--mainColor);
+        margin: 0 5px;
+        border-radius:50%;
+        box-shadow: 0 0 0 10px var(--mainColor),
+        0 0 50px var(--mainColor),
+        0 0 50px var(--mainColor);
+        animation: anim 20s linear infinite;
+        animation-duration: calc(180s / var(--i));
+        &:nth-child(even){
+          background-color: #ff2d75;
+          box-shadow: 0 0 0 10px #ff2d7544,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+        } 
+      }
+    }
+  }
+
+  @keyframes anim {
+    0%{
+      transform: translateY(100vh) scale(0);
+    }
+    100%{
+      transform: translateY(-100vh) scale(1);
+    }
+  }
 
 
 </style>

@@ -317,9 +317,11 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 1111;
     h1{
       font-size: 35px;
       position: relative;
+      z-index: 1111;
       &::before{
         content: '';
         width: 50%;
@@ -327,6 +329,7 @@ export default {
         background-color: var(--mainColor);
         position: absolute;
         top: 100%;
+        z-index: 1111;
       }
       &::after{
         content: '';
@@ -336,10 +339,12 @@ export default {
         background-color: var(--mainColor);
         position: absolute;
         top: 130%;
+        z-index: 111;
       }
     }
     h3{
         margin-top: 50px;
+        z-index: 1111;
     }
    .mainbox{
     margin-top: 50px;
@@ -347,6 +352,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap: 30px;
+    z-index: 1111;
     .image{
         margin: 20px 0px;
         width: 100%;
