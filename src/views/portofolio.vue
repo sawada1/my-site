@@ -50,6 +50,21 @@
              </div>
             </div>
           <div class="image">
+             <img src="../assets/portofolio/project23.jpg" alt="">
+          
+             <div class="land">
+               <h4>#ks-movies project</h4>
+               <div class="icons">
+               <a href="https://github.com/sawada1/ks-movies" target="_blank">
+                <i class="fa-brands fa-github"></i>   
+               </a>
+                <a href="https://sawada1.github.io/ks-movies/" target="_blank">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+               </div>
+             </div>
+            </div>
+          <div class="image">
              <img src="../assets/portofolio/project19.jpg" alt="">
           
              <div class="land">

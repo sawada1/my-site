@@ -73,7 +73,7 @@ export default {
         margin-top: 30px;
         margin-bottom: 50px;
       font-size: 35px;
-      z-index: 1111;
+      z-index: 111;
       position: relative;
       &::before{
         content: '';
@@ -115,7 +115,7 @@ export default {
         gap: 20px;
         margin-top: 50px;
         width: 100%;
-        z-index: 111111;
+        z-index: 111;
         .box{
             display: flex;
             flex-direction: column;
@@ -147,7 +147,7 @@ export default {
         width: 100%;
         gap: 30px;
         padding: 30px;
-        z-index: 11111;
+        z-index: 111;
         h2{
         font-size: 27px;
         color: var(--mainColor);
