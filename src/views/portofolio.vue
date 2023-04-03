@@ -20,6 +20,66 @@
              </div>
             </div>
           <div class="image">
+             <img src="../assets/portofolio/project18.jpg" alt="">
+          
+             <div class="land">
+               <h4>#gym project</h4>
+               <div class="icons">
+               <a href="https://github.com/sawada1/gym" target="_blank">
+                <i class="fa-brands fa-github"></i>   
+               </a>
+                <a href="https://sawada1.github.io/gym/" target="_blank">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+               </div>
+             </div>
+            </div>
+          <div class="image">
+             <img src="../assets/portofolio/project21.jpg" alt="">
+          
+             <div class="land">
+               <h4>#digital project</h4>
+               <div class="icons">
+               <a href="https://github.com/sawada1/digital" target="_blank">
+                <i class="fa-brands fa-github"></i>   
+               </a>
+                <a href=" https://sawada1.github.io/digital/" target="_blank">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+               </div>
+             </div>
+            </div>
+          <div class="image">
+             <img src="../assets/portofolio/project19.jpg" alt="">
+          
+             <div class="land">
+               <h4>#meetup project</h4>
+               <div class="icons">
+               <a href="https://github.com/sawada1/meetup" target="_blank">
+                <i class="fa-brands fa-github"></i>   
+               </a>
+                <a href="https://sawada1.github.io/meetup/" target="_blank">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+               </div>
+             </div>
+            </div>
+          <div class="image">
+             <img src="../assets/portofolio/project22.jpg" alt="">
+          
+             <div class="land">
+               <h4>#festival project</h4>
+               <div class="icons">
+               <a href="https://github.com/sawada1/festival" target="_blank">
+                <i class="fa-brands fa-github"></i>   
+               </a>
+                <a href="https://sawada1.github.io/festival/" target="_blank">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+               </div>
+             </div>
+            </div>
+          <div class="image">
              <img src="../assets/portofolio/project1.jpg" alt="">
           
              <div class="land">
@@ -67,6 +127,20 @@
              </div>
             </div>
        
+          <div class="image">
+             <img src="../assets/portofolio/project20.jpg" alt="">
+             <div class="land">
+               <h4>#medical</h4>
+               <div class="icons">
+               <a href="https://github.com/sawada1/medical" target="_blank">
+                <i class="fa-brands fa-github"></i>   
+               </a>
+                <a href="https://sawada1.github.io/medical/" target="_blank">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+               </div>
+             </div>
+            </div>
           <div class="image">
              <img src="../assets/portofolio/project4.jpg" alt="">
              <div class="land">

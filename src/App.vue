@@ -147,22 +147,24 @@ return{color , change , thecheck , toggle , check , icon , bubbles , togglebuubl
 .theme{
   position: fixed;
   top: 22%;
-  right: -120px;
+  right: 15px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   z-index: 11111;
-  // background-color: red;
-  width: 200px;
-  padding: 10px;
+  background-color: #ccccccd3;
+  width: 45px;
+  padding: 15px;
   transition: 0.5s;
   &.active{
-            right: 40px;
+            // right: 40px;
+            width: 220px;
         }
   i{
     cursor: pointer;
     font-size: 20px;
     color: var(--mainColor);
+    // margin: 0px 15px;
   }
   .fa-solid{
     width: 0;
@@ -184,6 +186,7 @@ padding: 5px;
     transform: translateX(130%);
     // top: 100%;
     transition: 0.5s;
+    margin: 0px 10px;
         text-align: center;
         &.active{
             transform: translateX(0%);

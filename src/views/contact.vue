@@ -39,7 +39,10 @@
             </div>
              <input type="text" placeholder="subject">
              <textarea style="resize: none;" cols="30" rows="10" placeholder="message"></textarea>
-             <button>submit</button>
+             <div class="btn">
+                <button>submit</button>      
+             </div>
+       
           </form>
          </div>
     </div>
@@ -173,10 +176,15 @@ export default {
                 border: none;
                 outline: none;
                 border-radius: 20px;
+                &::placeholder{
+                    font-size: 12px;
+                }
             }
-            button{
-                width: 30%;
-                padding: 10px 20px;
+            .btn{
+                text-align: center;
+                button{
+                padding: 10px 30px;
+             
                 font-size: 20px;
                 background-color: var(--mainColor);
                 cursor: pointer;
@@ -189,6 +197,8 @@ export default {
                 }
                 z-index: 11111;
             }
+            }
+           
         }
     }
 }
