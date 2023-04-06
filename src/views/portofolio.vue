@@ -5,21 +5,6 @@
         <h3>my last projects:</h3>
         <div class="mainbox">
           <div class="image">
-             <img src="../assets/portofolio/rotana.png" alt="">
-          
-             <div class="land">
-               <h4>#rotana project</h4>
-               <div class="icons">
-               <a href="https://github.com/sawada1/rotana" target="_blank">
-                <i class="fa-brands fa-github"></i>   
-               </a>
-                <a href="https://sawada1.github.io/rotana/" target="_blank">
-                <i class="fa-solid fa-right-from-bracket"></i>
-              </a>
-               </div>
-             </div>
-            </div>
-          <div class="image">
              <img src="../assets/portofolio/project18.jpg" alt="">
           
              <div class="land">
